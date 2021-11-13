@@ -12,17 +12,8 @@ textarea.addEventListener('keydown', (e) => {
   else
     logMessage(`Key "${e.key}" repeating  [event: keydown]`);
 });
-
-textarea.addEventListener('beforeinput', (e) => {
-  logMessage(`Key "${e.data}" about to be input  [event: beforeinput]`);
-});
-
 textarea.addEventListener('input', (e) => {
   logMessage(`Key "${e.data}" input  [event: input]`);
-});
-
-textarea.addEventListener('keyup', (e) => {
-  logMessage(`Key "${e.key}" released  [event: keyup]`);
 });
 
 btnReset.addEventListener('click', (e) => {
